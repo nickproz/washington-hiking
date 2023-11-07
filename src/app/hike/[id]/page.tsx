@@ -3,7 +3,6 @@ import React from 'react';
 import { NextPage } from 'next';
 import { GetStaticPropsContext } from 'next/types';
 import { ImageGalleryComponent } from '@/components/gallery/image-gallery';
-import { RandomImageGalleryComponent } from '@/components/gallery/random-image-gallery';
 
 // TODO: determine dynamically
 const NUM_IMAGES: number = 16;
@@ -17,7 +16,6 @@ const HikeComponent: NextPage<GetStaticPropsContext> = ({ params }) => {
 
   return (
     <>
-      <RandomImageGalleryComponent />
       <ImageGalleryComponent images={getImages()} />
     </>
   );
